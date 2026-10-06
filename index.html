@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Enterprise Dashboard</h1>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="#">Dashboard</a>
+            <a href="#">Reports</a>
+            <a href="#">Settings</a>
+        </nav>
+    </header>
+
+    <aside>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Reports</a></li>
+        </ul>
+    </aside>
+
+    <main>
+
+        <section>
+            <h2>Dashboard Overview</h2>
+
+            <article>
+                <h3>Total Revenue</h3>
+                <p>₹1,25,000</p>
+            </article>
+
+            <article>
+                <h3>Total Customers</h3>
+                <p>1,250</p>
+            </article>
+
+            <article>
+                <h3>Total Orders</h3>
+                <p>850</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Customer Information</h2>
+
+            <table>
+                <caption>Recent Customer Orders</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Customer</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Amount</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Arun</td>
+                        <td>Laptop</td>
+                        <td>₹50,000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Priya</td>
+                        <td>Mobile</td>
+                        <td>₹25,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Customer Form</h2>
+
+            <form>
+
+                <fieldset>
+                    <legend>Customer Details</legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"
+                           required aria-label="Customer name">
+
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"
+                           required aria-label="Customer email">
+
+                    <br><br>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+
+            </form>
+        </section>
+
+       <section>
+    <h2>Information</h2>
+
+    <button type="button" onclick="document.getElementById('infoDialog').showModal()">
+        Open Information
+    </button>
+
+    <dialog id="infoDialog" aria-labelledby="dialogTitle">
+        <h2 id="dialogTitle">Dashboard Information</h2>
+        <p>This dashboard provides customer and business information.</p>
+
+        <button type="button"
+                onclick="document.getElementById('infoDialog').close()">
+            Close
+        </button>
+    </dialog>
+</section> 
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Enterprise Dashboard</p>
+    </footer>
+
+</body>
+</html>
