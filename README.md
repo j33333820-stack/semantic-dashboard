@@ -1,0 +1,1 @@
+Implemented an accessible enterprise dashboard using semantic HTML5 elements such as header, nav, aside, main, section, article, and footer. Added accessible forms with labels, ARIA attributes, validation, data tables, and a modal dialog. The HTML structure was validated using the W3C HTML Validator, and the project was uploaded to GitHub.
